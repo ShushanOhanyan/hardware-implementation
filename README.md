@@ -1,2 +1,2 @@
-# hardware-Implimatation
-our hardware Implimatation
+# hardware-implementation
+hardware implementation for project HEROS
