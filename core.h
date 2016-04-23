@@ -19,11 +19,21 @@ class core
 		// stores the address of the next instruction to be executed
 		static int IP;
 
-
+                //logical operations
+	 // underscores have been added intentionally
+		void and_(int& ,int );
+		void or_(int& ,int );
+		void xor_(int& ,int);
+		void ashl(int& ,int );
+		void ashr(int& ,int );
+		void lshr(int& ,int);
+		void sex_b(int& ,int);
+		void sex_s(int& ,int);
+		void not_(int& ,int );
+		
+		
 		static std::map<std::string,int> 	genReg;
 		static int SpecReg[10];
-
-		
 		//move from first argument,to second
 		bool mov(int* from, int* to);
 		//push to stack
