@@ -1,6 +1,6 @@
-void stb(char ra, char rb)
+void stb(int ra, int rb)
 {
-	*((char*)ra)=rb;
+	*((char*)ra)=(char)rb;
 }
 
 void stl(int ra,int rb)
@@ -8,10 +8,7 @@ void stl(int ra,int rb)
 	*((int*)ra)=rb;
 }
 
-void sts(short ra, short rb)
+void sts(int ra, int rb)
 {
-	*((short*)ra)=rb;
+	*((short*)ra)=(int)rb;
 }
-
-
-
