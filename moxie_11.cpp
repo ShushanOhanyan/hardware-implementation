@@ -1,12 +1,12 @@
-void and(int& rA,int rB)
+void and_(int& rA,int rB)
 {
    rA=rA&rB;
 }
-void or(int& rA,int rB)
+void or_(int& rA,int rB)
 {
    rA=rA|rB;
 }
-void xor(int& rA,int rB)
+void xor_(int& rA,int rB)
 {
    rA=rA^rB;
 }
@@ -34,7 +34,7 @@ void sex_s(int& rA,int rB)
 rA=(rB<<16)>>16;
 }
 
-void not(int& rA,int rB)
+void not_(int& rA,int rB)
 {
   rA=!rB;
 }
