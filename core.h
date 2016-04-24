@@ -52,6 +52,8 @@ class core
 	    static std::map<std::string,int>  getRegs();
 		static void add(std::string r1, std::string r2); 
 		static void sub(std::string r1, std::string r2); 
+		static void zex_s(std::string r1, std::string r2);
+		static void zex_b(std::string r1, std::string r2); 
 	public:
 		//strat to exequte code from memory
 		static void Run();	
