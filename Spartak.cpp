@@ -38,7 +38,7 @@ void stas(string ra, int rb)
 	*((int*)rb) = short(rara)
 }
 
-void stob(string ra,)
+//void stob(string ra,)
 
 
 
