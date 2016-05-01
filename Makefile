@@ -14,8 +14,8 @@ mfcore:coreRun.o core.o Memory.o MemoryBus.o IDE.o
 		g++ coreRun.o core.o Memory.o MemoryBus.o IDE.o -o core
 coreRun.o:coreRun.cpp
 		g++ coreRun.cpp -c
-core.o:core.cpp vardges.cpp core.h
-		g++ core.cpp vardges.cpp -c    
+core.o:core.cpp Astghik.cpp vardges.cpp core.h
+		g++ core.cpp Astghik.cpp vardges.cpp -c    
 Memory.o: Memory.cpp Memory.h
 		g++  Memory.cpp -c 
 MemoryBus.o:MemoryBus.cpp MemoryBus.h
