@@ -44,7 +44,7 @@ class core
 		static bool ret();
 		//implement a subroutine call and return
 		static bool call(int);
-		bool lidtr();
+				static bool call(int);
 		//Input to HDD		
 		static bool in();
 		//output from HDD
@@ -54,6 +54,18 @@ class core
 		static void sub(std::string r1, std::string r2); 
 		static void zex_s(std::string r1, std::string r2);
 		static void zex_b(std::string r1, std::string r2); 
+				bool ld_b(std::string rA, std::string rB);
+		bool ld_l(std::string rA, std::string rB);
+		bool ld_s(std::strng rA, std::string rB);
+		bool lda_b(std::string rA , char* opadress);
+		bool lda_l(std::string rA,  char* opadress);
+		bool lda_s(std::string rA,  char* opadress);
+		bool ldi_b(std::string rA,  char* opadress);
+		bool ldi_l(std::string rA,  char* opadress);
+		bool ldi_s(std::string rA,  char* opadress);
+		bool ldo_b(std::string rA,  char* opadress);
+		bool ldo_l(std::string rA,  char* opadress);
+	
 	public:
 		//strat to exequte code from memory
 		static void Run();	
