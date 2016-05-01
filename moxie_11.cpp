@@ -1,40 +1,40 @@
-void and_(int& rA,int rB)
+void and_(string r1, string r2)
 {
-   rA=rA&rB;
+genReg[r1] = genReg[r1] & genReg[r2]; 
 }
-void or_(int& rA,int rB)
+void or_(string r1, string r2)
 {
-   rA=rA|rB;
+   genReg[r1]=genReg[r1]|genReg[r2];
 }
-void xor_(int& rA,int rB)
+void xor_(string r1, string r2)
 {
-   rA=rA^rB;
+   genReg[r1]=genReg[r1]^genReg[r2];
 }
-void ashl(int& rA,int rB)
+void ashl(string r1, string r2)
 {
-rA=rA<<rB;
-}
-
-void ashr(int& rA,int rB)
-{
-rA=rA>>rB;
+genReg[r1]=genReg[r1]<<genReg[r2];
 }
 
-void lshr(int& rA,int rB)
+void ashr(string r1, string r2)
 {
-  int mask=((1<<31)>>rB)<<1;
-  rA=(rA>>rB)&(~mask);
-}
-void sex_b(int& rA,int rB)
-{
- rA=(rB<<24)>>24;
-}
-void sex_s(int& rA,int rB)
-{
-rA=(rB<<16)>>16;
+genReg[r1]=genReg[r1]>>genReg[r2];
 }
 
-void not_(int& rA,int rB)
+void lshr(string r1, string r2)
 {
-  rA=!rB;
+  int mask=((1<<31)>>genReg[r2])<<1;
+  genReg[r1]=(genReg[r1]>>genReg[r2])&(~mask);
+}
+void sex_b(string r1, string r2)
+{
+genReg[r1]=(genReg[r2]<<24)>>24;
+}
+void sex_s(string r1, string r2)
+{
+genReg[r1]=(genReg[r2]<<16)>>16;
+}
+
+void not_(string r1, string r2)
+{
+genReg[r1]=!(genReg[r2]);
 }
